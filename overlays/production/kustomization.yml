@@ -1,0 +1,13 @@
+resources:
+- ../../base
+namespace: prod
+namePrefix: prod-
+patches:
+- path: deployment.yml
+replicas:
+  - count: 1
+    name: spring-kotlin
+images:
+  - name: rafal0823/springkotlin
+    newName: rafal0823/springkotlin
+    newTag: master4d982c711700417333
