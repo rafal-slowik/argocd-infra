@@ -3,24 +3,18 @@ kind: Application
 metadata:
   name: myapp-kotlin-app
   namespace: argocd
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
+  destination:
+    namespace: dev
+    server: https://kubernetes.default.svc
   project: default
   source:
+    path: overlays/dev
     repoURL: https://github.com/rafal-slowik/argocd-infra.git
     targetRevision: HEAD
-    path: overlays/dev
-    directory:
-      recurse: false
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: dev
-
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true
