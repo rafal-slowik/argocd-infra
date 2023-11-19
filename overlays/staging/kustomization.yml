@@ -4,3 +4,10 @@ namespace: staging
 namePrefix: staging-
 patches:
 - path: deployment.yml
+replicas:
+  - count: 2
+    name: spring-kotlin
+images:
+  - name: rafal0823/springkotlin
+    newName: rafal0823/springkotlin
+    newTag: master4d982c711700417333
