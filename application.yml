@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/rafal-slowik/argocd-infra.git
     targetRevision: HEAD
-    path: dev
+    path: overlays/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: app

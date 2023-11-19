@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+namespace: dev
+patchesStrategicMerge:
+  - deployment.yml
+namePrefix: dev-
