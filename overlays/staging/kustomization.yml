@@ -1,6 +1,6 @@
 resources:
-  - ../../base
+- ../../base
 namespace: staging
-patchesStrategicMerge:
-  - deployment.yml
 namePrefix: staging-
+patches:
+- path: deployment.yml
