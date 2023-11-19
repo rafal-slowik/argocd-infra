@@ -10,12 +10,12 @@ spec:
   source:
     repoURL: https://github.com/rafal-slowik/argocd-infra.git
     targetRevision: HEAD
-    path: overlays
+    path: overlays/dev
     directory:
       recurse: false
   destination:
     server: https://kubernetes.default.svc
-#    namespace: app
+    namespace: dev
 
   syncPolicy:
     syncOptions:
