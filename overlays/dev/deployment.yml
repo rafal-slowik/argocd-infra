@@ -5,4 +5,4 @@ metadata:
     app: spring-kotlin
   name: spring-kotlin
 spec:
-  replicas: 1
+  replicas: 2
