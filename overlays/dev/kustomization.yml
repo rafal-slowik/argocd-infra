@@ -12,4 +12,4 @@ replicas:
 images:
   - name: rafal0823/springkotlin
     newName: rafal0823/springkotlin
-    newTag: master4d982c711700417333
+    newTag: masterd2876dd01700433033
