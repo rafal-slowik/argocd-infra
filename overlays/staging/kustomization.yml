@@ -5,7 +5,7 @@ namePrefix: staging-
 patches:
 - path: deployment.yml
 replicas:
-  - count: 2
+  - count: 1
     name: spring-kotlin
 images:
   - name: rafal0823/springkotlin
