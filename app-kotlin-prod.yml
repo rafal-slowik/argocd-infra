@@ -9,12 +9,6 @@ spec:
     namespace:
   project: default
   sources:
-  - path: overlays/dev
-    repoURL: https://github.com/rafal-slowik/argocd-infra.git
-    targetRevision: HEAD
-  - path: overlays/staging
-    repoURL: https://github.com/rafal-slowik/argocd-infra.git
-    targetRevision: HEAD
   - path: overlays/prod
     repoURL: https://github.com/rafal-slowik/argocd-infra.git
     targetRevision: HEAD
